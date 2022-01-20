@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Alert from '../../components/Alert'
 import ConfirmationModal from '../../components/ConfirmationModal'
 import FormModal from '../../components/FormModal'
 import Api from '../../store/api'
@@ -77,6 +78,7 @@ export default function DataManagement() {
         {
           confirmationModal && <ConfirmationModal closeModal={setConfirmationModal} passedId={passedId}/>
         }
+        {/* <Alert/> */}
       </div>
     </div>
   )

@@ -42,27 +42,23 @@ export default function DataPendaftar() {
     <div>
       <div className='border-2 w-1/4 p-5 mx-auto shadow-md rounded-sm'>
         <p className='text-lg font-medium'>Form Pendaftaran Mahasiswa</p>
-        <div>
-          <form action="">
-            <div className='grid grid-cols-1 gap-6 mt-4'>
-              <div>
-                <label htmlFor="firstName" className='text-gray-700'>First Name :</label>
-                <input type="text" id='firstName' className={style.input} value={initialValue.firstName} onChange={handlerInputFirstName}/>
-              </div>
-              <div>
-                <label htmlFor="lastName" className='text-gray-700'>Last Name : </label>
-                <input type="text" id='lastName' className={style.input} value={initialValue.lastName} onChange={handlerInputLastName}/>
-              </div>
-              <div>
-                <label htmlFor="email" className='text-gray-700'>Email : </label>
-                <input type="text" id='email' className={style.input} value={initialValue.email} onChange={handlerInputEmail}/>
-              </div>
-              <div className="flex justify-end mt-6">
-                <button className={style.btn} onClick={onSubmitClick}>Submit</button>
-              </div>
+          <div className='grid grid-cols-1 gap-6 mt-4'>
+            <div>
+              <label htmlFor="firstName" className='text-gray-700'>First Name :</label>
+              <input type="text" id='firstName' className={style.input} value={initialValue.firstName} onChange={handlerInputFirstName}/>
             </div>
-          </form>
-        </div>
+            <div>
+              <label htmlFor="lastName" className='text-gray-700'>Last Name : </label>
+              <input type="text" id='lastName' className={style.input} value={initialValue.lastName} onChange={handlerInputLastName}/>
+            </div>
+            <div>
+              <label htmlFor="email" className='text-gray-700'>Email : </label>
+              <input type="text" id='email' className={style.input} value={initialValue.email} onChange={handlerInputEmail}/>
+            </div>
+            <div className="flex justify-end mt-6">
+              <button className={style.btn} onClick={onSubmitClick}>Submit</button>
+            </div>
+          </div>
       </div>
     </div>
   )

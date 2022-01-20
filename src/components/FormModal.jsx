@@ -18,9 +18,11 @@ export default function FormModal({closeModal, passedData}) {
   const addData = async () => {
     const req = {
       id: Math.floor(Math.random() * 100),
+      afiliator_id: 1,
       ...initialValue
     }
     const res = await Api.post("/mahasiswa", req)
+    console.log(res);
   }
   const updateData = async () => {
     const res = await Api.put(`/mahasiswa/${passedData.id}`,initialValue)
